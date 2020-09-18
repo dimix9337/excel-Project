@@ -115,6 +115,11 @@ class Dom {
     }
     return this.$el.getAttribute(name)
   }
+
+  cleear() {
+    this.html('')
+    return this
+  }
 }
 export function $(selector) {
   return new Dom(selector)
